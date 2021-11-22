@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vongle</title>
+		<link rel = "icon" href = "logo-icon.png">
+		<meta property = "og:title" content = "Vongle">
+    	<meta property = "og:image" content = "https://vongle.dkeree.repl.co/logo-icon.png">
+    	<meta property = "og:description" content = "A pixel art styled platformer I made on Snap! for my school coding competition!">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<link href = "style.css" rel = "stylesheet" type = "text/css">
+
+		<!--SNAP FILES-->
+
+        <script src="snap/morphic.js"></script>
+        <script src="snap/symbols.js"></script>
+        <script src="snap/widgets.js"></script>
+        <script src="snap/blocks.js"></script>
+        <script src="snap/thread.js"></script>
+        <script src="snap/objects.js"></script>
+        <script src="snap/gui.js"></script>
+        <script src="snap/paint.js"></script>
+        <script src="snap/lists.js"></script>
+        <script src="snap/byob.js"></script>
+        <script src="snap/tables.js"></script>
+        <script src="snap/sketch.js"></script>
+        <script src="snap/video.js"></script>
+        <script src="snap/maps.js"></script>
+        <script src="snap/xml.js"></script>
+        <script src="snap/store.js"></script>
+        <script src="snap/locale.js"></script>
+        <script src="snap/cloud.js"></script>
+        <script src="snap/api.js"></script>
+        <script src="snap/sha512.js"></script>
+        <script src="snap/filesaver.js"></script>
+        <script>
+            var world;
+            window.onload = function () {
+                world = new WorldMorph(document.getElementById('game'));
+                new IDE_Morph().openIn(world);
+                loop();
+			};
+            function loop() {
+                requestAnimationFrame(loop);
+                world.doOneCycle();
+            }
+        </script>
+
+        <!--SNAP FILES END-->
+
+	</head>
+	<body>
+		<div id = "website-widget">
+			<img id = "pfp" src = "https://dkeree.repl.co/pfp.png">
+		</div>
+		<a id = "download">Download XML</a>
+		<div id = "container">
+			<div id = "logo-wrapper">
+				<img id = "logo" src = "logo.png">
+			</div>
+			<canvas id = "game"></canvas>
+			<p class = "info">
+				Hey! Thanks for checking out my platformer, Vongle! As you can see, I'm not too great at making names for my games, but hey, at least it's original. Vongle is a pixel art styled platformer that runs in Snap!, which is a block code IDE similar to Scratch. I wish that I could've made it in pure JavaScript but I had to in order for it to be qualified for my school's coding competition. The prize is a large rainbow owl and I have grinded my ass off to get it. I have no clue what the outcome will be, for the end date is December 8th, but until then feel free to give it a go. Begin your journey by clicking on the green flag...
+			</p>
+			<p class = "info">
+				P.S. Try to find the easter egg. Good luck ;)
+			</p>
+		</div>
+		<script src = "load.js"></script>
+	</body>
+</html>
