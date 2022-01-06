@@ -62,9 +62,46 @@ body {
 	box-shadow: 0 5px 20px color: #7289DA inset 0 0 20px #7289DA;
 }
 
-.info {
+#owl-container {
+	border-radius: 8px 0px 0px 8px;
+}
+
+#owl-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+#owl {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px 0px 0px 8px;
+}
+
+#info-container {
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+#text-container {
+	border-radius: 0px 8px 8px 0px;
+}
+
+.divider {
+	background-color: #36393E;
+	width: 301.09px;
+	height: 401.45px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+
+#info {
+	padding: 10px;
+	margin: 0;
 	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
+	font-size: 14.7px;
 	color: white;
 }
 
