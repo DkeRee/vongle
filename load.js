@@ -8,7 +8,7 @@
 
 	const website = document.getElementById("website-widget");
 	website.addEventListener("click", () => {
-		window.open("ttps://dkeree.github.io/DkeRee/", "_blank");
+		window.open("https://dkeree.github.io/DkeRee/", "_blank");
 	});
 
 	const owl = document.getElementsByClassName("divider")[0];
